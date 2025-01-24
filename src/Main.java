@@ -1,18 +1,21 @@
+import br.com.alura.screenmatch.modelos.Filme;
+
 public class Main {
+
     public static void main(String[] args) {
         Filme favorito = new Filme();
 
-        favorito.nome = "Ratatouille";
-        favorito.anoDeLancamento = 2007;
-        favorito.duracaoEmMinutos = 111;
-        favorito.incluidoNoPlano = true;
-        favorito.genero = Genero.ANIMACAO;
+        favorito.setNome("Ratatouille");
+        favorito.setAnoDeLancamento(2007);
+        favorito.setDuracaoEmMinutos(111);
+        favorito.setIncluidoNoPlano(true);
 
-        favorito.exibirFichaTecnica();
-        favorito.avaliar(9);
-        favorito.avaliar(8);
-        favorito.avaliar(9);
+        favorito.exibeFichaTecnica();
+        favorito.avalia(9);
+        favorito.avalia(8);
+        favorito.avalia(9);
 
-        System.out.println("Média de avaliações do filme: " + favorito.obterMediaDeAvalicoes());
+        System.out.println("Média de avaliações do filme: " +favorito.pegaMedia());
     }
+
 }

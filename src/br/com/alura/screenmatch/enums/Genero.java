@@ -1,3 +1,5 @@
+package br.com.alura.screenmatch.enums;
+
 public enum Genero {
     ACAO("Ação"),
     AVENTURA("Aventura"),
