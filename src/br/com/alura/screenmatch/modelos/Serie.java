@@ -1,6 +1,8 @@
 package br.com.alura.screenmatch.modelos;
 
-public class Serie extends Titulo {
+import br.com.alura.screenmatch.interfaces.Classificavel;
+
+public class Serie extends Titulo implements Classificavel {
 
     private int temporadas;
     private boolean ativa;
@@ -42,5 +44,18 @@ public class Serie extends Titulo {
     @Override
     public int getDuracaoEmMinutos() {
         return temporadas * episodiosPorTemporada * minutosPorEpisodio;
+    }
+
+    @Override
+    public int getClassificacao() {
+        double media = pegaMedia();
+
+        if(media >= 9) {
+            return 5;
+        } else if(media >= 8) {
+            return 4;
+        } else {
+            return 2;
+        }
     }
 }
