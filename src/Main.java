@@ -1,4 +1,5 @@
 import br.com.alura.screenmatch.calculos.CalculadoraDeMaratonas;
+import br.com.alura.screenmatch.enums.Genero;
 import br.com.alura.screenmatch.filtros.FiltroClassificacoes;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
@@ -11,6 +12,8 @@ public class Main {
         primeiroFilme.setAnoDeLancamento(1999);
         primeiroFilme.setDuracaoEmMinutos(135);
         primeiroFilme.setIncluidoNoPlano(true);
+        primeiroFilme.setGenero(Genero.ACAO);
+
         primeiroFilme.avalia(10.00);
         primeiroFilme.avalia(10.00);
 
@@ -19,6 +22,8 @@ public class Main {
         segundoFilme.setAnoDeLancamento(2014);
         segundoFilme.setDuracaoEmMinutos(101);
         segundoFilme.setIncluidoNoPlano(true);
+        primeiroFilme.setGenero(Genero.ACAO);
+
         segundoFilme.avalia(1.50);
         segundoFilme.avalia(5.00);
 
@@ -30,6 +35,8 @@ public class Main {
         serie.setTemporadas(5);
         serie.setEpisodiosPorTemporada(10);
         serie.setMinutosPorEpisodio(45);
+        primeiroFilme.setGenero(Genero.DRAMA);
+
         serie.avalia(4.00);
         serie.avalia(4.50);
 
