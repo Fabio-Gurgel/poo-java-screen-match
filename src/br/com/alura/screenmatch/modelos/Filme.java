@@ -1,6 +1,5 @@
 package br.com.alura.screenmatch.modelos;
 
-import br.com.alura.screenmatch.enums.Genero;
 import br.com.alura.screenmatch.interfaces.Classificavel;
 
 public class Filme extends Titulo implements Classificavel {
